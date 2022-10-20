@@ -1,10 +1,12 @@
-package com.switchfully.spring_boot_application;
+package com.switchfully.spring_boot_application.person;
 
-public class Person {
+public class PersonDTO {
+    private int id;
     private String firstName;
     private String lastName;
 
-    public Person(String firstName, String lastName) {
+    public PersonDTO(int id, String firstName, String lastName) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -16,4 +18,9 @@ public class Person {
     public String getLastName() {
         return lastName;
     }
+
+    public int getId() {
+        return id;
+    }
+
 }
