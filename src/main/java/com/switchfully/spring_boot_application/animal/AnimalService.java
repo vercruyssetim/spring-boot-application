@@ -14,7 +14,7 @@ public class AnimalService {
     }
 
     public List<AnimalDTO> getAllAnimals() {
-
+        System.out.println("Hello world");
         return animalRepository.getAllAnimals();
     }
 }
