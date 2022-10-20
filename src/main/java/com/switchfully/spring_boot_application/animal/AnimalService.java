@@ -6,8 +6,15 @@ import java.util.List;
 
 //@Service
 public class AnimalService {
+
+    private AnimalRepository animalRepository;
+
+    public AnimalService(AnimalRepository animalRepository) {
+        this.animalRepository = animalRepository;
+    }
+
     public List<AnimalDTO> getAllAnimals() {
-        //TODO: remove this fake
-        return List.of(new AnimalDTO("name"));
+
+        return animalRepository.getAllAnimals();
     }
 }
