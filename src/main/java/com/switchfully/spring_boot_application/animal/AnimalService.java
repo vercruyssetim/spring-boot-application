@@ -7,7 +7,7 @@ import java.util.List;
 //@Service
 public class AnimalService {
     public List<AnimalDTO> getAllAnimals() {
-        //TODO: remove this fake
+        System.out.println("hello world");
         return List.of(new AnimalDTO("name"));
     }
 }
